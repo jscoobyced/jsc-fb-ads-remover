@@ -1,0 +1,22 @@
+{
+    "name": "JSC Facebook Ad Remover",
+    "description": "A Chrome extension to hide Ads in Facebook.",
+    "version": "0.3",
+    "manifest_version": 3,
+    "action": {
+        "default_title": "Facebook Ads Remover",
+        "default_icon": "assets/images/fbar.png",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "activeTab",
+        "scripting"
+    ],
+    "background": {
+        "service_worker": "assets/scripts/sw.js"
+    },
+    "host_permissions": [
+        "https://facebook.com/*",
+        "https://www.facebook.com/*"
+    ]
+}
